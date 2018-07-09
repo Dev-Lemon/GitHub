@@ -1,0 +1,2008 @@
+{
+  "title": "Smart energy monitoring no banner",
+  "configuration": {
+    "widgets": {
+      "f57bd9db-c524-5fb1-e74e-e35b87fa3782": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "timeseries_bars_flot",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 18,
+        "sizeY": 10,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "energy",
+                  "type": "timeseries",
+                  "label": "Smart Meter A",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": false,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "axisPosition": "left",
+                    "axisTickDecimals": 2
+                  },
+                  "_hash": 0.036812182877684174
+                }
+              ],
+              "name": "Smart Meter A",
+              "entityAliasId": "247a7267-41b8-cc0f-d551-130bb7f3e065"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "energy",
+                  "type": "timeseries",
+                  "label": "Smart Meter B",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": false,
+                    "fillLines": false,
+                    "showPoints": false
+                  },
+                  "_hash": 0.8925256390148815
+                }
+              ],
+              "name": "Smart Meter B",
+              "entityAliasId": "e1de92f1-0366-4142-9d34-db2471556afb"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "energy",
+                  "type": "timeseries",
+                  "label": "Smart Meter C",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": false,
+                    "fillLines": false,
+                    "showPoints": false
+                  },
+                  "_hash": 0.26058158776571894
+                }
+              ],
+              "name": "Smart Meter C",
+              "entityAliasId": "232cd100-3690-0557-618d-a276bed3cf27"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "interval": 1800000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgba(255, 255, 255, 0)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 14,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#fffefe"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#fffefe",
+              "title": "Energy, kWh",
+              "titleAngle": 90
+            },
+            "grid": {
+              "color": "#fffefe",
+              "tickColor": "rgba(255, 254, 254, 0.05)",
+              "verticalLines": false,
+              "horizontalLines": true,
+              "outlineWidth": 0
+            },
+            "stack": true,
+            "tooltipIndividual": false
+          },
+          "title": "Energy consumption",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "opacity": "0.87"
+          },
+          "mobileHeight": 5,
+          "mobileOrder": 1,
+          "useDashboardTimewindow": false,
+          "showLegend": true,
+          "legendConfig": {
+            "position": "bottom",
+            "showMin": true,
+            "showMax": true,
+            "showAvg": true,
+            "showTotal": true
+          },
+          "units": "kWh",
+          "decimals": 4,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "row": 0,
+        "col": 0,
+        "id": "f57bd9db-c524-5fb1-e74e-e35b87fa3782"
+      },
+      "6a042d4b-d070-11c2-f439-c17430c230f1": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "pie",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 10,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "energy",
+                  "type": "timeseries",
+                  "label": "Smart Meter A",
+                  "color": "rgba(33, 150, 243, 0.75)",
+                  "settings": {},
+                  "_hash": 0.9057042567189175
+                }
+              ],
+              "name": "Smart Meter A",
+              "entityAliasId": "247a7267-41b8-cc0f-d551-130bb7f3e065"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "energy",
+                  "type": "timeseries",
+                  "label": "Smart Meter B",
+                  "color": "rgba(76, 175, 80, 0.75)",
+                  "settings": {},
+                  "_hash": 0.801465994490951
+                }
+              ],
+              "name": "Smart Meter B",
+              "entityAliasId": "e1de92f1-0366-4142-9d34-db2471556afb"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "energy",
+                  "type": "timeseries",
+                  "label": "Smart Meter C",
+                  "color": "rgba(244, 67, 54, 0.75)",
+                  "settings": {},
+                  "_hash": 0.6475590101567295
+                }
+              ],
+              "name": "Smart Meter C",
+              "entityAliasId": "232cd100-3690-0557-618d-a276bed3cf27"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgba(0, 0, 1, 0.04)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "8px",
+          "settings": {
+            "radius": 1,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "innerRadius": 0.4,
+            "showLabels": true,
+            "stroke": {
+              "width": 5,
+              "color": "#182a5b"
+            },
+            "tilt": 1,
+            "animatedPie": false
+          },
+          "title": "Energy consumption",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "opacity": "0.87"
+          },
+          "mobileOrder": 2,
+          "mobileHeight": 4,
+          "useDashboardTimewindow": true,
+          "showLegend": false
+        },
+        "row": 0,
+        "col": 20,
+        "id": "6a042d4b-d070-11c2-f439-c17430c230f1"
+      },
+      "465c67b4-0f29-d1af-9df7-8f3c965bfe7b": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 18,
+        "sizeY": 10,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "voltage",
+                  "type": "timeseries",
+                  "label": "Smart Meter A",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false
+                  },
+                  "_hash": 0.3799791036684894
+                }
+              ],
+              "name": "Smart Meter A",
+              "entityAliasId": "247a7267-41b8-cc0f-d551-130bb7f3e065"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "voltage",
+                  "type": "timeseries",
+                  "label": "Smart Meter B",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false
+                  },
+                  "_hash": 0.6957840671866848
+                }
+              ],
+              "name": "Smart Meter B",
+              "entityAliasId": "e1de92f1-0366-4142-9d34-db2471556afb"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "voltage",
+                  "type": "timeseries",
+                  "label": "Smart Meter C",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false
+                  },
+                  "_hash": 0.8862574406235089
+                }
+              ],
+              "name": "Smart Meter C",
+              "entityAliasId": "232cd100-3690-0557-618d-a276bed3cf27"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgba(0, 0, 1, 0.04)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "8px",
+          "settings": {
+            "fontColor": "#ffffff",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#ffffff"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#ffffff",
+              "title": "Voltage, V",
+              "titleAngle": 90
+            },
+            "grid": {
+              "color": "#ffffff",
+              "tickColor": "rgba(255, 255, 255, 0.05)",
+              "verticalLines": false,
+              "horizontalLines": true,
+              "outlineWidth": 0
+            },
+            "shadowSize": 8,
+            "stack": false
+          },
+          "title": "Voltage",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "opacity": "0.87"
+          },
+          "mobileOrder": 3,
+          "mobileHeight": 4,
+          "units": "V",
+          "decimals": 2,
+          "useDashboardTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "position": "bottom",
+            "showMin": true,
+            "showMax": true,
+            "showAvg": true,
+            "showTotal": false
+          }
+        },
+        "row": 10,
+        "col": 0,
+        "id": "465c67b4-0f29-d1af-9df7-8f3c965bfe7b"
+      },
+      "a2333e7d-2116-52bb-8ded-592a3aa45547": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 20,
+        "sizeY": 10,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "amperage",
+                  "type": "timeseries",
+                  "label": "Smart Meter A",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": true,
+                    "showPoints": false
+                  },
+                  "_hash": 0.8904595574817094
+                }
+              ],
+              "name": "Smart Meter A",
+              "entityAliasId": "247a7267-41b8-cc0f-d551-130bb7f3e065"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "amperage",
+                  "type": "timeseries",
+                  "label": "Smart Meter B",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": true,
+                    "showPoints": false
+                  },
+                  "_hash": 0.6638187204733235
+                }
+              ],
+              "name": "Smart Meter B",
+              "entityAliasId": "e1de92f1-0366-4142-9d34-db2471556afb"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "amperage",
+                  "type": "timeseries",
+                  "label": "Smart Meter C",
+                  "color": "rgb(244, 67, 54)",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": true,
+                    "showPoints": false
+                  },
+                  "_hash": 0.15285380790765024
+                }
+              ],
+              "name": "Smart Meter C",
+              "entityAliasId": "232cd100-3690-0557-618d-a276bed3cf27"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgba(0, 0, 1, 0.04)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 8,
+            "fontColor": "#ffffff",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#ffffff"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#ffffff",
+              "title": "Amperage, A",
+              "titleAngle": 90
+            },
+            "grid": {
+              "color": "#ffffff",
+              "tickColor": "rgba(255, 255, 255, 0.05)",
+              "verticalLines": false,
+              "horizontalLines": true,
+              "outlineWidth": 0
+            },
+            "stack": true
+          },
+          "title": "Current (Amperage)",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "opacity": "0.87"
+          },
+          "mobileOrder": 4,
+          "mobileHeight": 4,
+          "units": "A",
+          "decimals": 2,
+          "useDashboardTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "position": "bottom",
+            "showMin": true,
+            "showMax": true,
+            "showAvg": true,
+            "showTotal": false
+          }
+        },
+        "row": 0,
+        "col": 30,
+        "id": "a2333e7d-2116-52bb-8ded-592a3aa45547"
+      },
+      "340a23be-d37a-7b5e-9b12-2c8bb0e9e597": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 2,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(33, 150, 243, 0.25)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardHtml": "<div class='card'>Smart Meter A</div>",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 24px;\n    color: #81fbf6;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+          },
+          "title": "Smart Meter A",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 5,
+          "mobileHeight": 1
+        },
+        "row": 10,
+        "col": 20,
+        "id": "340a23be-d37a-7b5e-9b12-2c8bb0e9e597"
+      },
+      "83eeaf04-3cc6-eadf-0113-efff7e2332a8": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "digital_vertical_bar",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "voltage",
+                  "type": "timeseries",
+                  "label": "voltage",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.5567799766295194,
+                  "postFuncBody": "return value;"
+                }
+              ],
+              "name": "Smart Meter A",
+              "entityAliasId": "247a7267-41b8-cc0f-d551-130bb7f3e065"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(33, 150, 243, 0.25)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 240,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": false,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "refreshAnimationType": "<>",
+            "refreshAnimationTime": 700,
+            "startAnimationType": "<>",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 12
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 8,
+              "style": "normal",
+              "weight": "normal",
+              "color": "#ffffff"
+            },
+            "neonGlowBrightness": 0,
+            "decimals": 2,
+            "showUnitTitle": false,
+            "gaugeColor": "#0c1730",
+            "gaugeType": "verticalBar",
+            "showTitle": true,
+            "minValue": 230,
+            "dashThickness": 1.2,
+            "units": " V",
+            "title": "Voltage",
+            "unitTitle": "Voltage",
+            "defaultColor": "#87fcff"
+          },
+          "title": "Voltage: Smart Meter A",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 6,
+          "mobileHeight": 4
+        },
+        "row": 12,
+        "col": 20,
+        "id": "83eeaf04-3cc6-eadf-0113-efff7e2332a8"
+      },
+      "df876f0f-bff8-6876-d672-5ea061ed118f": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "digital_vertical_bar",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "frequency",
+                  "type": "timeseries",
+                  "label": "frequency",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.1959373598724674
+                }
+              ],
+              "name": "Smart Meter A",
+              "entityAliasId": "247a7267-41b8-cc0f-d551-130bb7f3e065"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(33, 150, 243, 0.25)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 51,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": false,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "refreshAnimationType": "<>",
+            "refreshAnimationTime": 700,
+            "startAnimationType": "<>",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 12
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 8,
+              "style": "normal",
+              "weight": "normal",
+              "color": "#ffffff"
+            },
+            "neonGlowBrightness": 0,
+            "decimals": 2,
+            "showUnitTitle": false,
+            "gaugeColor": "#0c1730",
+            "gaugeType": "verticalBar",
+            "showTitle": true,
+            "minValue": 49,
+            "dashThickness": 1.2,
+            "unitTitle": "Frequency",
+            "units": " Hz",
+            "title": "Frequency",
+            "defaultColor": "#87fcff"
+          },
+          "title": "Frequency: Smart Meter A",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 7,
+          "mobileHeight": 4
+        },
+        "row": 12,
+        "col": 23,
+        "id": "df876f0f-bff8-6876-d672-5ea061ed118f"
+      },
+      "c2decc87-d5f1-cc63-777a-d8c6247de09a": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "simple_neon_gauge_justgage",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "power",
+                  "type": "timeseries",
+                  "label": "power",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.4218076666710997
+                }
+              ],
+              "name": "Smart Meter A",
+              "entityAliasId": "247a7267-41b8-cc0f-d551-130bb7f3e065"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(33, 150, 243, 0.25)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 4500,
+            "minValue": 450,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 1,
+            "levelColors": [],
+            "refreshAnimationType": ">",
+            "refreshAnimationTime": 700,
+            "startAnimationType": ">",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 14
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 1.5,
+            "decimals": 0,
+            "gaugeType": "donut",
+            "title": "Power",
+            "showTitle": true,
+            "units": " W",
+            "showUnitTitle": false,
+            "unitTitle": "Power",
+            "defaultColor": "#87fcff"
+          },
+          "title": "Power: Smart Meter A",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 8,
+          "mobileHeight": 4
+        },
+        "row": 12,
+        "col": 26,
+        "id": "c2decc87-d5f1-cc63-777a-d8c6247de09a"
+      },
+      "a2b64258-85b3-0320-c34b-dc9e4496b266": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "simple_neon_gauge_justgage",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "amperage",
+                  "type": "timeseries",
+                  "label": "amperage",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.7579419763193838
+                }
+              ],
+              "name": "Smart Meter A",
+              "entityAliasId": "247a7267-41b8-cc0f-d551-130bb7f3e065"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(33, 150, 243, 0.25)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 20,
+            "minValue": 0,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 0.5,
+            "levelColors": [],
+            "refreshAnimationType": ">",
+            "refreshAnimationTime": 700,
+            "startAnimationType": ">",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 16
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 0,
+            "decimals": 2,
+            "gaugeType": "donut",
+            "gaugeColor": "rgba(0, 0, 0, 0)",
+            "roundedLineCap": true,
+            "showTitle": true,
+            "title": "Current",
+            "units": " A",
+            "defaultColor": "#87fcff"
+          },
+          "title": "Current: Smart Meter A",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 9,
+          "mobileHeight": 4
+        },
+        "row": 16,
+        "col": 26,
+        "id": "a2b64258-85b3-0320-c34b-dc9e4496b266"
+      },
+      "a3fdc7a3-79fa-7fe8-b338-bcc14c6f60b5": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 2,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(76, 175, 80, 0.25)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardHtml": "<div class='card'>Smart Meter B</div>",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 24px;\n    color: #b1feb5;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+          },
+          "title": "Smart Meter B",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 10,
+          "mobileHeight": 1
+        },
+        "row": 10,
+        "col": 30,
+        "id": "a3fdc7a3-79fa-7fe8-b338-bcc14c6f60b5"
+      },
+      "a88088cf-6f00-ed35-3fb5-d1afc99c25b5": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "digital_vertical_bar",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "voltage",
+                  "type": "timeseries",
+                  "label": "voltage",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.9720667305088413
+                }
+              ],
+              "name": "Smart Meter B",
+              "entityAliasId": "e1de92f1-0366-4142-9d34-db2471556afb"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(76, 175, 80, 0.25)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 240,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": false,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "refreshAnimationType": "<>",
+            "refreshAnimationTime": 700,
+            "startAnimationType": "<>",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 12
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 8,
+              "style": "normal",
+              "weight": "normal",
+              "color": "#ffffff"
+            },
+            "neonGlowBrightness": 0,
+            "decimals": 2,
+            "showUnitTitle": false,
+            "gaugeColor": "#0c1730",
+            "gaugeType": "verticalBar",
+            "showTitle": true,
+            "minValue": 230,
+            "dashThickness": 1.2,
+            "units": " V",
+            "title": "Voltage",
+            "unitTitle": "Voltage",
+            "defaultColor": "#b2ffb6"
+          },
+          "title": "Voltage: Smart Meter B",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 11,
+          "mobileHeight": 4
+        },
+        "row": 12,
+        "col": 30,
+        "id": "a88088cf-6f00-ed35-3fb5-d1afc99c25b5"
+      },
+      "eae1e816-27a3-dce6-dc51-59746e2132bd": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "digital_vertical_bar",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "frequency",
+                  "type": "timeseries",
+                  "label": "frequency",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.049882999986111454
+                }
+              ],
+              "name": "Smart Meter B",
+              "entityAliasId": "e1de92f1-0366-4142-9d34-db2471556afb"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(76, 175, 80, 0.25)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 51,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": false,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "refreshAnimationType": "<>",
+            "refreshAnimationTime": 700,
+            "startAnimationType": "<>",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 12
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 8,
+              "style": "normal",
+              "weight": "normal",
+              "color": "#ffffff"
+            },
+            "neonGlowBrightness": 0,
+            "decimals": 2,
+            "showUnitTitle": false,
+            "gaugeColor": "#0c1730",
+            "gaugeType": "verticalBar",
+            "showTitle": true,
+            "minValue": 49,
+            "dashThickness": 1.2,
+            "unitTitle": "Frequency",
+            "units": " Hz",
+            "title": "Frequency",
+            "defaultColor": "#b2ffb6"
+          },
+          "title": "Frequency: Smart Meter B",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 12,
+          "mobileHeight": 4
+        },
+        "row": 12,
+        "col": 33,
+        "id": "eae1e816-27a3-dce6-dc51-59746e2132bd"
+      },
+      "3cf15c23-0aa7-d1c7-c1b5-836c51bb0d18": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "simple_neon_gauge_justgage",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "power",
+                  "type": "timeseries",
+                  "label": "power",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.8621971932134249
+                }
+              ],
+              "name": "Smart Meter B",
+              "entityAliasId": "e1de92f1-0366-4142-9d34-db2471556afb"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(76, 175, 80, 0.25)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 4500,
+            "minValue": 450,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 1,
+            "levelColors": [],
+            "refreshAnimationType": ">",
+            "refreshAnimationTime": 700,
+            "startAnimationType": ">",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 14
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 1.5,
+            "decimals": 0,
+            "gaugeType": "donut",
+            "title": "Power",
+            "showTitle": true,
+            "units": " W",
+            "showUnitTitle": false,
+            "unitTitle": "Power",
+            "defaultColor": "#b2ffb6"
+          },
+          "title": "Power: Smart Meter B",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 13,
+          "mobileHeight": 4
+        },
+        "row": 12,
+        "col": 36,
+        "id": "3cf15c23-0aa7-d1c7-c1b5-836c51bb0d18"
+      },
+      "8260d273-be73-56bd-ac05-8b190da648b8": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "simple_neon_gauge_justgage",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "amperage",
+                  "type": "timeseries",
+                  "label": "amperage",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.28700287550755954
+                }
+              ],
+              "name": "Smart Meter B",
+              "entityAliasId": "e1de92f1-0366-4142-9d34-db2471556afb"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(76, 175, 80, 0.25)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 20,
+            "minValue": 0,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 0.5,
+            "levelColors": [],
+            "refreshAnimationType": ">",
+            "refreshAnimationTime": 700,
+            "startAnimationType": ">",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 16
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 0,
+            "decimals": 2,
+            "gaugeType": "donut",
+            "gaugeColor": "rgba(0, 0, 0, 0)",
+            "roundedLineCap": true,
+            "showTitle": true,
+            "title": "Current",
+            "units": " A",
+            "defaultColor": "#b2ffb6"
+          },
+          "title": "Current: Smart Meter B",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 14,
+          "mobileHeight": 4
+        },
+        "row": 16,
+        "col": 36,
+        "id": "8260d273-be73-56bd-ac05-8b190da648b8"
+      },
+      "9159df95-683a-df0a-0467-e54d89cfdb5f": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 2,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(244, 67, 54, 0.25)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardHtml": "<div class='card'>Smart Meter C</div>",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 24px;\n    color: #ff9c93;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+          },
+          "title": "Smart Meter C",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 15,
+          "mobileHeight": 1
+        },
+        "row": 10,
+        "col": 40,
+        "id": "9159df95-683a-df0a-0467-e54d89cfdb5f"
+      },
+      "287129ec-1999-4aa7-3271-113ed56b1e53": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "digital_vertical_bar",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "voltage",
+                  "type": "timeseries",
+                  "label": "voltage",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.26168533200603017
+                }
+              ],
+              "name": "Smart Meter C",
+              "entityAliasId": "232cd100-3690-0557-618d-a276bed3cf27"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(244, 67, 54, 0.25)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 240,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": false,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "refreshAnimationType": "<>",
+            "refreshAnimationTime": 700,
+            "startAnimationType": "<>",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 12
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 8,
+              "style": "normal",
+              "weight": "normal",
+              "color": "#ffffff"
+            },
+            "neonGlowBrightness": 0,
+            "decimals": 2,
+            "showUnitTitle": false,
+            "gaugeColor": "#0c1730",
+            "gaugeType": "verticalBar",
+            "showTitle": true,
+            "minValue": 230,
+            "dashThickness": 1.2,
+            "units": " V",
+            "title": "Voltage",
+            "unitTitle": "Voltage",
+            "defaultColor": "#fe9e9a"
+          },
+          "title": "Voltage: Smart Meter C",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 16,
+          "mobileHeight": 4
+        },
+        "row": 12,
+        "col": 40,
+        "id": "287129ec-1999-4aa7-3271-113ed56b1e53"
+      },
+      "83e83193-799f-699d-a423-fabb0c6c47cf": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "digital_vertical_bar",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "frequency",
+                  "type": "timeseries",
+                  "label": "frequency",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.83577069273764
+                }
+              ],
+              "name": "Smart Meter C",
+              "entityAliasId": "232cd100-3690-0557-618d-a276bed3cf27"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(244, 67, 54, 0.25)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 51,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": false,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "refreshAnimationType": "<>",
+            "refreshAnimationTime": 700,
+            "startAnimationType": "<>",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 12
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 8,
+              "style": "normal",
+              "weight": "normal",
+              "color": "#ffffff"
+            },
+            "neonGlowBrightness": 0,
+            "decimals": 2,
+            "showUnitTitle": false,
+            "gaugeColor": "#0c1730",
+            "gaugeType": "verticalBar",
+            "showTitle": true,
+            "minValue": 49,
+            "dashThickness": 1.2,
+            "unitTitle": "Frequency",
+            "units": " Hz",
+            "title": "Frequency",
+            "defaultColor": "#fe9e9a"
+          },
+          "title": "Frequency: Smart Meter C",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 17,
+          "mobileHeight": 4
+        },
+        "row": 12,
+        "col": 43,
+        "id": "83e83193-799f-699d-a423-fabb0c6c47cf"
+      },
+      "ae579a48-2e23-b974-19ca-aea9c971fc65": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "simple_neon_gauge_justgage",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "power",
+                  "type": "timeseries",
+                  "label": "power",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.23175845664918482
+                }
+              ],
+              "name": "Smart Meter C",
+              "entityAliasId": "232cd100-3690-0557-618d-a276bed3cf27"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(244, 67, 54, 0.25)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 4500,
+            "minValue": 450,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 1,
+            "levelColors": [],
+            "refreshAnimationType": ">",
+            "refreshAnimationTime": 700,
+            "startAnimationType": ">",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 14
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 1.5,
+            "decimals": 0,
+            "gaugeType": "donut",
+            "title": "Power",
+            "showTitle": true,
+            "units": " W",
+            "showUnitTitle": false,
+            "unitTitle": "Power",
+            "defaultColor": "#fe9e9a"
+          },
+          "title": "Power: Smart Meter C",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 18,
+          "mobileHeight": 4
+        },
+        "row": 12,
+        "col": 46,
+        "id": "ae579a48-2e23-b974-19ca-aea9c971fc65"
+      },
+      "59f32e9c-465c-a939-a134-275be2d26d79": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "simple_neon_gauge_justgage",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "amperage",
+                  "type": "timeseries",
+                  "label": "amperage",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.4780352607273537
+                }
+              ],
+              "name": "Smart Meter C",
+              "entityAliasId": "232cd100-3690-0557-618d-a276bed3cf27"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(244, 67, 54, 0.25)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 20,
+            "minValue": 0,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 0.5,
+            "levelColors": [],
+            "refreshAnimationType": ">",
+            "refreshAnimationTime": 700,
+            "startAnimationType": ">",
+            "startAnimationTime": 700,
+            "titleFont": {
+              "family": "RobotoDraft",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "RobotoDraft",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "RobotoDraft",
+              "style": "normal",
+              "weight": "500",
+              "size": 16
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 0,
+            "decimals": 2,
+            "gaugeType": "donut",
+            "gaugeColor": "rgba(0, 0, 0, 0)",
+            "roundedLineCap": true,
+            "showTitle": true,
+            "title": "Current",
+            "units": " A",
+            "defaultColor": "#fe9e9a"
+          },
+          "title": "Current: Smart Meter C",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileOrder": 19,
+          "mobileHeight": 4
+        },
+        "row": 16,
+        "col": 46,
+        "id": "59f32e9c-465c-a939-a134-275be2d26d79"
+      }
+    },
+    "timewindow": {
+      "displayValue": "",
+      "selectedTab": 0,
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1488472150778,
+          "endTimeMs": 1488558550778
+        }
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 200
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Smart energy monitoring",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "f57bd9db-c524-5fb1-e74e-e35b87fa3782": {
+                "sizeX": 18,
+                "sizeY": 10,
+                "row": 0,
+                "col": 0,
+                "mobileHeight": 5,
+                "mobileOrder": 1
+              },
+              "6a042d4b-d070-11c2-f439-c17430c230f1": {
+                "sizeX": 10,
+                "sizeY": 10,
+                "row": 0,
+                "col": 18,
+                "mobileHeight": 4,
+                "mobileOrder": 2
+              },
+              "465c67b4-0f29-d1af-9df7-8f3c965bfe7b": {
+                "sizeX": 18,
+                "sizeY": 10,
+                "row": 10,
+                "col": 0,
+                "mobileHeight": 4,
+                "mobileOrder": 3
+              },
+              "a2333e7d-2116-52bb-8ded-592a3aa45547": {
+                "sizeX": 20,
+                "sizeY": 10,
+                "row": 0,
+                "col": 28,
+                "mobileHeight": 4,
+                "mobileOrder": 4
+              },
+              "340a23be-d37a-7b5e-9b12-2c8bb0e9e597": {
+                "sizeX": 10,
+                "sizeY": 2,
+                "row": 10,
+                "col": 18,
+                "mobileHeight": 1,
+                "mobileOrder": 5
+              },
+              "83eeaf04-3cc6-eadf-0113-efff7e2332a8": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 12,
+                "col": 18,
+                "mobileHeight": 4,
+                "mobileOrder": 6
+              },
+              "df876f0f-bff8-6876-d672-5ea061ed118f": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 12,
+                "col": 21,
+                "mobileHeight": 4,
+                "mobileOrder": 7
+              },
+              "c2decc87-d5f1-cc63-777a-d8c6247de09a": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 12,
+                "col": 24,
+                "mobileHeight": 4,
+                "mobileOrder": 8
+              },
+              "a2b64258-85b3-0320-c34b-dc9e4496b266": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 16,
+                "col": 24,
+                "mobileHeight": 4,
+                "mobileOrder": 9
+              },
+              "a3fdc7a3-79fa-7fe8-b338-bcc14c6f60b5": {
+                "sizeX": 10,
+                "sizeY": 2,
+                "row": 10,
+                "col": 28,
+                "mobileHeight": 1,
+                "mobileOrder": 10
+              },
+              "a88088cf-6f00-ed35-3fb5-d1afc99c25b5": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 12,
+                "col": 28,
+                "mobileHeight": 4,
+                "mobileOrder": 11
+              },
+              "eae1e816-27a3-dce6-dc51-59746e2132bd": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 12,
+                "col": 31,
+                "mobileHeight": 4,
+                "mobileOrder": 12
+              },
+              "3cf15c23-0aa7-d1c7-c1b5-836c51bb0d18": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 12,
+                "col": 34,
+                "mobileHeight": 4,
+                "mobileOrder": 13
+              },
+              "8260d273-be73-56bd-ac05-8b190da648b8": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 16,
+                "col": 34,
+                "mobileHeight": 4,
+                "mobileOrder": 14
+              },
+              "9159df95-683a-df0a-0467-e54d89cfdb5f": {
+                "sizeX": 10,
+                "sizeY": 2,
+                "row": 10,
+                "col": 38,
+                "mobileHeight": 1,
+                "mobileOrder": 15
+              },
+              "287129ec-1999-4aa7-3271-113ed56b1e53": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 12,
+                "col": 38,
+                "mobileHeight": 4,
+                "mobileOrder": 16
+              },
+              "83e83193-799f-699d-a423-fabb0c6c47cf": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 12,
+                "col": 41,
+                "mobileHeight": 4,
+                "mobileOrder": 17
+              },
+              "ae579a48-2e23-b974-19ca-aea9c971fc65": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 12,
+                "col": 44,
+                "mobileHeight": 4,
+                "mobileOrder": 18
+              },
+              "59f32e9c-465c-a939-a134-275be2d26d79": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 16,
+                "col": 44,
+                "mobileHeight": 4,
+                "mobileOrder": 19
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "rgb(20, 37, 81)",
+              "columns": 48,
+              "margins": [
+                5,
+                5
+              ],
+              "backgroundImageUrl": "data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnODY5MCIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iODMuNzg1bW0iIHdpZHRoPSIxNjkuMzNtbSIgdmVyc2lvbj0iMS4xIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDU5OS45OTk5OCAyOTYuODc1IiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iPgogPGRlZnMgaWQ9ImRlZnM4NjkyIj4KICA8cmFkaWFsR3JhZGllbnQgaWQ9InJhZGlhbEdyYWRpZW50OTI0OCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN5PSI4MDguMjciIGN4PSItODQ0LjI5IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTQxMyAtLjAxMjgzMSAuMDA3ODM0NCAuNjk2ODUgMTEyLjk1IDIzMS4yOCkiIHI9IjMwMCI+CiAgIDxzdG9wIGlkPSJzdG9wOTI0MiIgc3RvcC1jb2xvcj0iIzFjMzA2NyIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIGlkPSJzdG9wOTI0NCIgc3RvcC1jb2xvcj0iIzEwMjA0NyIgb2Zmc2V0PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KIDwvZGVmcz4KIDxnIGlkPSJsYXllcjIiPgogIDxyZWN0IGlkPSJyZWN0OTIzOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE0MCAtNjU0LjA2KSIgaGVpZ2h0PSIyOTYuODgiIHdpZHRoPSI2MDAiIHk9IjY1NC4wNiIgeD0iLTExNDAiIGZpbGw9InVybCgjcmFkaWFsR3JhZGllbnQ5MjQ4KSIvPgogPC9nPgo8L3N2Zz4K",
+              "backgroundSizeMode": "cover",
+              "color": "rgba(0,0,0,0.870588)",
+              "autoFillHeight": true,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "247a7267-41b8-cc0f-d551-130bb7f3e065": {
+        "id": "247a7267-41b8-cc0f-d551-130bb7f3e065",
+        "alias": "Smart Meter A",
+        "filter": {
+          "type": "entityName",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityNameFilter": "Smart Meter A"
+        }
+      },
+      "e1de92f1-0366-4142-9d34-db2471556afb": {
+        "id": "e1de92f1-0366-4142-9d34-db2471556afb",
+        "alias": "Smart Meter B",
+        "filter": {
+          "type": "entityName",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityNameFilter": "Smart Meter B"
+        }
+      },
+      "232cd100-3690-0557-618d-a276bed3cf27": {
+        "id": "232cd100-3690-0557-618d-a276bed3cf27",
+        "alias": "Smart Meter C",
+        "filter": {
+          "type": "entityName",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityNameFilter": "Smart Meter C"
+        }
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": false,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": false,
+      "titleColor": "rgba(255, 254, 254, 0.87)"
+    }
+  },
+  "name": "Smart energy monitoring no banner"
+}
