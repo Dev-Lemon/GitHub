@@ -1,0 +1,294 @@
+{
+  "title": "Alarm",
+  "configuration": {
+    "widgets": {
+      "f7136782-6043-c973-82d0-4d0e9f4ee76e": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 16,
+        "sizeY": 10,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": false,
+            "enableSearch": false,
+            "displayDetails": false,
+            "allowAcknowledgment": false,
+            "allowClear": true,
+            "displayPagination": false,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime"
+          },
+          "title": "New Alarms table",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Created time",
+                "color": "#2196f3",
+                "settings": {},
+                "_hash": 0.5056766557904591
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Originator",
+                "color": "#4caf50",
+                "settings": {},
+                "_hash": 0.00853097959556215
+              },
+              {
+                "name": "details.message",
+                "type": "alarm",
+                "label": "Message",
+                "color": "#607d8b",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "useCellContentFunction": false
+                },
+                "_hash": 0.19157470111306862
+              },
+              {
+                "name": "details.temperature",
+                "type": "alarm",
+                "label": "Temperature",
+                "color": "#9c27b0",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "useCellContentFunction": false
+                },
+                "_hash": 0.03918262534109607
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Status",
+                "color": "#8bc34a",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.9688016527649315
+              }
+            ],
+            "entityAliasId": "4b69a131-6c6e-0eb3-a310-7c8bd15cdd95",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 5,
+          "datasources": [],
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "f7136782-6043-c973-82d0-4d0e9f4ee76e"
+      },
+      "67269861-9486-df73-4d76-866ef456938f": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "digital_vertical_bar",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 6,
+        "sizeY": 10,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "temperature",
+                  "type": "timeseries",
+                  "label": "temperature",
+                  "color": "#00ff00",
+                  "settings": {},
+                  "_hash": 0.4490690264315018
+                }
+              ],
+              "entityAliasId": "4b69a131-6c6e-0eb3-a310-7c8bd15cdd95"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#000000",
+          "color": "rgba(255, 254, 254, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [
+              "#3d5afe",
+              "#f44336"
+            ],
+            "titleFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "Roboto",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "Segment7Standard",
+              "style": "normal",
+              "weight": "500",
+              "size": 14
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 8,
+              "style": "normal",
+              "weight": "normal",
+              "color": "#cccccc"
+            },
+            "neonGlowBrightness": 20,
+            "showUnitTitle": true,
+            "gaugeColor": "#171a1c",
+            "gaugeType": "verticalBar",
+            "showTitle": false,
+            "minValue": -100,
+            "dashThickness": 1.2,
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "linear",
+            "timestampFormat": "yyyy-MM-dd HH:mm:ss",
+            "maxValue": 220
+          },
+          "title": "New Digital vertical bar",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "decimals": 0
+        },
+        "id": "67269861-9486-df73-4d76-866ef456938f"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Alarm",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "f7136782-6043-c973-82d0-4d0e9f4ee76e": {
+                "sizeX": 16,
+                "sizeY": 10,
+                "row": 0,
+                "col": 0
+              },
+              "67269861-9486-df73-4d76-866ef456938f": {
+                "sizeX": 6,
+                "sizeY": 10,
+                "row": 0,
+                "col": 16
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "4b69a131-6c6e-0eb3-a310-7c8bd15cdd95": {
+        "id": "4b69a131-6c6e-0eb3-a310-7c8bd15cdd95",
+        "alias": "Alarm",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": true,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "73dab2f0-d35a-11e8-a9e9-e7311abe23e2"
+          }
+        }
+      }
+    },
+    "timewindow": {
+      "displayValue": "",
+      "selectedTab": 0,
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1539825855736,
+          "endTimeMs": 1539912255736
+        }
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 200
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true
+    }
+  },
+  "name": "Alarm"
+}
